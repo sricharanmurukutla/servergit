@@ -23,7 +23,7 @@ require('dotenv').config();
 app.use(cors()); 
 app.use(compression({ level: 6, threshold: 100 * 1000 }));
 
-app.use(express.static('public'));
+app.use(express());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 //connection url----mysql://um5ca0ercrpw4cah:wwAVjGTY46hrlGDqm6YP@byovqvd0umvo56p600mu-mysql.services.clever-cloud.com:3306/byovqvd0umvo56p600mu
